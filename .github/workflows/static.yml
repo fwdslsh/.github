@@ -22,6 +22,34 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+
+  build:
+    # Specify runner +  build & upload the static files as an artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: fwdslsh/website
+          path: src
+          fetch-depth: 0
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Install dependencies
+        run: bun install -g @fwdslsh/unify
+      - name: Build static files
+        id: build
+        run: |
+          unify build --minify --perfection
+
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
   # Single deploy job since we're just deploying
   deploy:
     environment:
