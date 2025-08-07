@@ -78,7 +78,7 @@ The `/` isn't just our logo - it's a commitment to cutting through the cruft.
 
 ## Community
 
-- 🌐 **Website**: [fwdslsh.dev](https://fwdslsh.dev) _(coming soon)_
+- 🌐 **Website**: [fwdslsh.dev](https://fwdslsh.dev)
 - 📦 **Packages**: [npmjs.com/org/fwdslsh](https://npmjs.com/org/fwdslsh)
 - 💬 **Discussions**: Use GitHub Discussions on our tool repositories
 - 🐛 **Issues**: Report bugs and request features in individual repos
