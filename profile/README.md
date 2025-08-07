@@ -1,88 +1,88 @@
-# 🌿 fwdslsh Manifesto
+# fwdslsh
 
-*Slash a path to simplicity.*
+We build developer experience focused tools for devs who remember when tools where not monoliths. Zero deps, instant setup, no frameworks to babysit.
 
----
+## Our Tools
 
-## 🔥 The Problem
+### [giv](https://github.com/fwdslsh/giv) - Git workflows on autopilot
 
-We’ve lost the plot.
+AI-powered commit messages, changelogs, and release notes. Ships as a static binary, talks to any LLM backend, doesn't break your flow.
 
-Developer tools have become bloated, opaque, and over-engineered.
-Frameworks promise productivity, but deliver churn.
-Build systems require build systems.
-Every update breaks something.
-Every tool becomes its own ecosystem.
-And for what?
+```bash
+# Better messages, less time
+git commit -m "$(giv message)"
+giv changelog v1.0.0..HEAD
+```
 
-**We are burning brain cells to serve complexity.**
+**Why we built it**: Writing commit messages is grunt work. Let the machine do grunt work while you build.
 
----
+### [unify](https://github.com/fwdslsh/unify) - Static sites for people who remember HTML
 
-## ✊ The Resistance
+Build sites with Apache SSI syntax and modern tooling. No JSX, no build step hell, no framework lock-in. Just fast sites that ship.
 
-**fwdslsh** is our peaceful rebellion.
-A slash through the noise.
-A return to clarity, control, and purpose.
-A soft weapon in the hands of creators who want to build, not babysit their stack.
+```bash
+# One binary, zero ceremony
+unify build
+unify serve --live-reload
+```
 
-We believe:
-
-* That every tool should be **understandable in a single sitting**
-* That simplicity is not compromise — it’s a **superpower**
-* That performance begins with **mental performance**
-* That small, sharp tools are better than big, brittle ones
-* That the future is not dystopian, but **solar, serene, and self-sustaining**
+**Why we built it**: Static site generators became more complex than the sites they build. We fixed that.
 
 ---
 
-## 🌱 The Vision
+## The Path Forward
 
-We are building a suite of tools that:
+**Old-school principles, new-school execution**: Unix philosophy meets modern tooling. Small, sharp programs that do one thing well.
 
-* Slash through unnecessary layers
-* Embrace **web standards**, **POSIX principles**, and **clean design**
-* Work with your system — not against it
-* Are designed to be **understood**, not just used
-* Feel like old-school Unix, but with a soul from the future
+**Ship binaries, not ecosystems**: Download once, run everywhere. No package manager roulette or dependency hell.
 
-This isn’t retro. This is retro-future.
-**This is solarpunk for your shell.**
+**Hack with the grain**: Work with web standards and POSIX conventions instead of reinventing everything.
+
+**Performance starts in your head**: Tools should amplify human intelligence, not fight it with ceremony and complexity.
 
 ---
 
-## 🧪 The Tools
+## Quick Start
 
-Our tools are:
+```bash
+# Install giv (cross-platform, no dependencies)
+curl -L -o giv https://github.com/fwdslsh/giv/releases/latest/download/giv-linux-x86_64
+chmod +x giv && sudo mv giv /usr/local/bin/
 
-* 🔧 **Composable** – Use what you need, skip what you don’t
-* 📦 **Frameworkless** – No more towering abstractions
-* 🐚 **CLI-native** – Optimized for terminal workflows
-* 🌐 **Portable** – Built for web, shell, and local-first dev
+# Install unify (requires Bun)
+bun add -g @fwdslsh/unify
 
----
-
-## 🌍 The Movement
-
-This is not just tooling.
-It’s a philosophy of digital resilience.
-
-* **We burn complexity, not brain cells.**
-* **We cut paths where others build walls.**
-* **We believe tools should work for us, not the other way around.**
-
-We are the vine growing through the concrete.
-We are the slash that refuses to be silenced.
-We are **fwdslsh**.
+# Use them together for documentation workflows
+giv changelog > docs/CHANGELOG.md
+unify build
+```
 
 ---
 
-## 📣 Join Us
+## Philosophy in Practice
 
-* [github.com/fwdslsh](https://github.com/fwdslsh)
-* [fwdslsh.dev](https://fwdslsh.dev) (soon)
-* [npmjs.com/org/fwdslsh](https://npmjs.com/org/fwdslsh) (soon)
+We're not building the next unicorn framework. We're building tools for devs who value craft over hype.
 
-Together, let’s reclaim the craft.
-Let’s build something worth maintaining.
-Let’s slash forward.
+Every tool should be:
+
+- **Comprehensible** - Understand each tool in one session
+- **Reliable** - Works the same way today and next year
+- **Composable** - Plays nice with your existing scripts and workflows
+- **Fast** - Both runtime fast and "get shit done" fast
+
+This isn't luddism. It's choosing signal over noise, substance over ceremony, paths that actually lead somewhere.
+
+The `/` isn't just our logo - it's a commitment to cutting through the cruft.
+
+---
+
+## Community
+
+- 🌐 **Website**: [fwdslsh.dev](https://fwdslsh.dev) _(coming soon)_
+- 📦 **Packages**: [npmjs.com/org/fwdslsh](https://npmjs.com/org/fwdslsh)
+- 💬 **Discussions**: Use GitHub Discussions on our tool repositories
+- 🐛 **Issues**: Report bugs and request features in individual repos
+
+---
+
+_Providing tools to help developers forge their own path._
