@@ -149,4 +149,24 @@ Make the following configurable in the generated files:
 - Clear error messages with solutions
 - Graceful fallbacks
 
-Generate all the necessary files with placeholder values filled in for the current project. Include detailed comments explaining each section and configuration option.
+Generate all the necessary files with placeholder values filled in for the current project. Include detailed comments explaining each section and configuration option. Be sure to clean up all extra files that were created during the the changes so the repo remains tidy.
+
+Ensure the README.md file is updated with the new installation instructions and usage examples.
+
+```
+## Installation
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/fwdslsh/[project_name]/main/install.sh | sh
+```
+
+### Manual Downloads
+
+Download pre-built binaries from [GitHub Releases](https://github.com/fwdslsh/[project_name]/releases).
+
+### Docker
+
+```bash
+docker run fwdslsh/[project_name]:latest --help
+```
+```
