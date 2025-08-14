@@ -1,6 +1,6 @@
 # fwdslsh
 
-We build developer experience focused tools for devs who remember when tools where not monoliths. Zero deps, instant setup, no frameworks to babysit.
+We build developer experience focused tools for devs who remember when tools where not monoliths. Zero deps, instant setup, no frameworks to wrestle.
 
 ## Our Tools
 
@@ -14,11 +14,11 @@ git commit -m "$(giv message)"
 giv changelog v1.0.0..HEAD
 ```
 
-**Why we built it**: Writing commit messages is grunt work. Let the machine do grunt work while you build.
+**Why we built it**: Writing commit messages is grunt work. Let the machine do grunt work while you focus on the fun stuff.
 
-### [unify](https://github.com/fwdslsh/unify) - Static sites for people who remember HTML
+### [unify](https://github.com/fwdslsh/unify) - Static sites for people with framework fatigue.
 
-Build sites with Apache SSI syntax and modern tooling. No JSX, no build step hell, no framework lock-in. Just fast sites that ship.
+Build sites with Apache SSI syntax and modern tooling. No JSX, no config file hell, no framework lock-in. Just fast sites that ship.
 
 ```bash
 # One binary, zero ceremony
@@ -30,7 +30,7 @@ unify serve --live-reload
 
 ### [inform](https://github.com/fwdslsh/inform) - High-performance web crawler
 
-Convert web pages to clean Markdown with intelligent content extraction. Built for documentation workflows and content archival.
+Convert web pages to clean Markdown with intelligent content extraction. Built for documentation extraction and curation. Think context7 as a CLI tool.
 
 ```bash
 # Crawl docs into Markdown
@@ -40,9 +40,9 @@ inform --recursive --depth 3 https://api.example.com
 
 **Why we built it**: Web scraping shouldn't require learning a framework. Point, extract, markdown.
 
-### [catalog](https://github.com/fwdslsh/catalog) - Centralized resource hub
+### [catalog](https://github.com/fwdslsh/catalog) - Content cataloging for Web 4.0
 
-Curated collection of tools, examples, and resources for the fwdslsh ecosystem. Your one-stop reference for finding the right tool for the job.
+The next version of the web will be built for AI agents. Give them a content catalog to pick from.
 
 ```bash
 # Browse the catalog
@@ -50,17 +50,16 @@ git clone https://github.com/fwdslsh/catalog
 cd catalog && unify serve --live-reload
 ```
 
-**Why we built it**: Finding the right tool shouldn't require hunting through scattered repos. One place, everything organized.
-
+**Why we built it**: The bot traffic to your site is only increasing. might as well let them save some GPU cycles.
 ---
 
 ## The Path Forward
 
-**Old-school principles, new-school execution**: Unix philosophy meets modern tooling. Small, sharp programs that do one thing well.
+**Old-school principles, new-school execution**: Unix philosophy meets modern tooling. Small, tatical programs that do one thing well.
 
 **Ship binaries, not ecosystems**: Download once, run everywhere. No package manager roulette or dependency hell.
 
-**Hack with the grain**: Work with web standards and POSIX conventions instead of reinventing everything.
+**Hack with the grain**: Work with web standards and POSIX conventions instead of reinventing them every six months.
 
 **Performance starts in your head**: Tools should amplify human intelligence, not fight it with ceremony and complexity.
 
