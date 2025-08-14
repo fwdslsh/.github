@@ -28,6 +28,30 @@ unify serve --live-reload
 
 **Why we built it**: Static site generators became more complex than the sites they build. We fixed that.
 
+### [inform](https://github.com/fwdslsh/inform) - High-performance web crawler
+
+Convert web pages to clean Markdown with intelligent content extraction. Built for documentation workflows and content archival.
+
+```bash
+# Crawl docs into Markdown
+inform https://docs.example.com --output docs/
+inform --recursive --depth 3 https://api.example.com
+```
+
+**Why we built it**: Web scraping shouldn't require learning a framework. Point, extract, markdown.
+
+### [lift](https://github.com/fwdslsh/lift) - Documentation indexer
+
+Generate `llms.txt` indexes from Markdown directories. Make your docs discoverable to AI tools and search systems.
+
+```bash
+# Create searchable doc index
+lift --input docs --output build/
+lift --format llms.txt docs/
+```
+
+**Why we built it**: Documentation scattered across repos is documentation lost. Index it, find it, use it.
+
 ---
 
 ## The Path Forward
@@ -76,13 +100,42 @@ The `/` isn't just our logo - it's a commitment to cutting through the cruft.
 
 ---
 
+## Catalog & Ecosystem
+
+### [examples](https://github.com/fwdslsh/examples) - Documentation catalog
+
+Comprehensive guides, tutorials, and examples for all fwdslsh tools. Your starting point for learning the ecosystem.
+
+```bash
+# Clone the catalog
+git clone https://github.com/fwdslsh/examples
+cd examples && unify serve --live-reload
+```
+
+**What's inside**: Tool guides, integration examples, best practices, and real-world workflows.
+
+### Supporting Infrastructure
+
+- **[toolkit](https://github.com/fwdslsh/toolkit)** - Docker environment with all tools pre-installed
+- **[website](https://github.com/fwdslsh/website)** - Official fwdslsh.dev site
+
+### Unify Ecosystem
+
+- **[create-unify-site](https://github.com/fwdslsh/create-unify-site)** - NPM scaffolding tool (`npm create unify-site`)
+- **[unify-starter](https://github.com/fwdslsh/unify-starter)** - Template repository for new Unify sites
+- **[unify-examples](https://github.com/fwdslsh/unify-examples)** - Example sites demonstrating Unify features
+- **[unify-vscode](https://github.com/fwdslsh/unify-vscode)** - VS Code extension for Unify syntax highlighting
+
+---
+
 ## Community
 
 - 🌐 **Website**: [fwdslsh.dev](https://fwdslsh.dev)
+- 📚 **Catalog**: [examples](https://github.com/fwdslsh/examples) - Comprehensive guides and tutorials
 - 📦 **Packages**: [npmjs.com/org/fwdslsh](https://npmjs.com/org/fwdslsh)
 - 💬 **Discussions**: Use GitHub Discussions on our tool repositories
 - 🐛 **Issues**: Report bugs and request features in individual repos
 
 ---
 
-_Providing tools to help developers forge their own path._
+_A path to a more simple future._
