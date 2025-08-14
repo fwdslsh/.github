@@ -40,17 +40,17 @@ inform --recursive --depth 3 https://api.example.com
 
 **Why we built it**: Web scraping shouldn't require learning a framework. Point, extract, markdown.
 
-### [lift](https://github.com/fwdslsh/lift) - Documentation indexer
+### [catalog](https://github.com/fwdslsh/catalog) - Centralized resource hub
 
-Generate `llms.txt` indexes from Markdown directories. Make your docs discoverable to AI tools and search systems.
+Curated collection of tools, examples, and resources for the fwdslsh ecosystem. Your one-stop reference for finding the right tool for the job.
 
 ```bash
-# Create searchable doc index
-lift --input docs --output build/
-lift --format llms.txt docs/
+# Browse the catalog
+git clone https://github.com/fwdslsh/catalog
+cd catalog && unify serve --live-reload
 ```
 
-**Why we built it**: Documentation scattered across repos is documentation lost. Index it, find it, use it.
+**Why we built it**: Finding the right tool shouldn't require hunting through scattered repos. One place, everything organized.
 
 ---
 
