@@ -44,13 +44,8 @@ inform --recursive --depth 3 https://api.example.com
 
 The next version of the web will be built for AI agents. Give them a content catalog to pick from.
 
-```bash
-# Browse the catalog
-git clone https://github.com/fwdslsh/catalog
-cd catalog && unify serve --live-reload
-```
-
 **Why we built it**: The bot traffic to your site is only increasing. might as well let them save some GPU cycles.
+
 ---
 
 ## The Path Forward
@@ -61,24 +56,7 @@ cd catalog && unify serve --live-reload
 
 **Hack with the grain**: Work with web standards and POSIX conventions instead of reinventing them every six months.
 
-**Performance starts in your head**: Tools should amplify human intelligence, not fight it with ceremony and complexity.
-
----
-
-## Quick Start
-
-```bash
-# Install giv (cross-platform, no dependencies)
-curl -L -o giv https://github.com/fwdslsh/giv/releases/latest/download/giv-linux-x86_64
-chmod +x giv && sudo mv giv /usr/local/bin/
-
-# Install unify (requires Bun)
-bun add -g @fwdslsh/unify
-
-# Use them together for documentation workflows
-giv changelog > docs/CHANGELOG.md
-unify build
-```
+**Performance starts in your head**: Tools should amplify human intelligence, not drain it with ceremony and complexity.
 
 ---
 
@@ -95,35 +73,27 @@ Every tool should be:
 
 This isn't luddism. It's choosing signal over noise, substance over ceremony, paths that actually lead somewhere.
 
-The `/` isn't just our logo - it's a commitment to cutting through the cruft.
+The `/` isn't just our logo - it's a commitment to choosing a simpler path.
 
 ---
 
-## Catalog & Ecosystem
+## Ecosystem Overview
 
-### [examples](https://github.com/fwdslsh/examples) - Documentation catalog
+### Documentation & Examples
 
-Comprehensive guides, tutorials, and examples for all fwdslsh tools. Your starting point for learning the ecosystem.
-
-```bash
-# Clone the catalog
-git clone https://github.com/fwdslsh/examples
-cd examples && unify serve --live-reload
-```
-
-**What's inside**: Tool guides, integration examples, best practices, and real-world workflows.
+- **[examples](https://github.com/fwdslsh/examples)** — Comprehensive guides, tutorials, and examples for all fwdslsh tools
 
 ### Supporting Infrastructure
 
-- **[toolkit](https://github.com/fwdslsh/toolkit)** - Docker environment with all tools pre-installed
-- **[website](https://github.com/fwdslsh/website)** - Official fwdslsh.dev site
+- **[toolkit](https://github.com/fwdslsh/toolkit)** — Docker environment with all tools pre-installed
+- **[website](https://github.com/fwdslsh/website)** — Official fwdslsh.dev site
 
 ### Unify Ecosystem
 
-- **[create-unify-site](https://github.com/fwdslsh/create-unify-site)** - NPM scaffolding tool (`npm create unify-site`)
-- **[unify-starter](https://github.com/fwdslsh/unify-starter)** - Template repository for new Unify sites
-- **[unify-examples](https://github.com/fwdslsh/unify-examples)** - Example sites demonstrating Unify features
-- **[unify-vscode](https://github.com/fwdslsh/unify-vscode)** - VS Code extension for Unify syntax highlighting
+- **[create-unify-site](https://github.com/fwdslsh/create-unify-site)** — NPM scaffolding tool (`npm create unify-site`)
+- **[unify-starter](https://github.com/fwdslsh/unify-starter)** — Template repository for new Unify sites
+- **[unify-examples](https://github.com/fwdslsh/unify-examples)** — Example sites demonstrating Unify features
+- **[unify-vscode](https://github.com/fwdslsh/unify-vscode)** — VS Code extension for Unify syntax highlighting
 
 ---
 
@@ -137,4 +107,4 @@ cd examples && unify serve --live-reload
 
 ---
 
-_A path to a more simple future._
+_A path to a simpler future._
