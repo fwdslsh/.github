@@ -4,30 +4,6 @@ We build developer experience focused tools for devs who remember when tools whe
 
 ## Our Tools
 
-### [giv](https://github.com/fwdslsh/giv) - Git workflows on autopilot
-
-AI-powered commit messages, changelogs, and release notes. Ships as a static binary, talks to any LLM backend, doesn't break your flow.
-
-```bash
-# Better messages, less time
-git commit -m "$(giv message)"
-giv changelog v1.0.0..HEAD
-```
-
-**Why we built it**: Writing commit messages is grunt work. Let the machine do grunt work while you focus on the fun stuff.
-
-### [unify](https://github.com/fwdslsh/unify) - Static sites for people with framework fatigue.
-
-Build sites with Apache SSI syntax and modern tooling. No JSX, no config file hell, no framework lock-in. Just fast sites that ship.
-
-```bash
-# One binary, zero ceremony
-unify build
-unify serve --live-reload
-```
-
-**Why we built it**: Static site generators became more complex than the sites they build. We fixed that.
-
 ### [inform](https://github.com/fwdslsh/inform) - High-performance web crawler
 
 Convert web pages to clean Markdown with intelligent content extraction. Built for documentation extraction and curation. Think context7 as a CLI tool.
@@ -74,26 +50,6 @@ Every tool should be:
 This isn't luddism. It's choosing signal over noise, substance over ceremony, paths that actually lead somewhere.
 
 The `/` isn't just our logo - it's a commitment to choosing a simpler path.
-
----
-
-## Ecosystem Overview
-
-### Documentation & Examples
-
-- **[examples](https://github.com/fwdslsh/examples)** — Comprehensive guides, tutorials, and examples for all fwdslsh tools
-
-### Supporting Infrastructure
-
-- **[toolkit](https://github.com/fwdslsh/toolkit)** — Docker environment with all tools pre-installed
-- **[website](https://github.com/fwdslsh/website)** — Official fwdslsh.dev site
-
-### Unify Ecosystem
-
-- **[create-unify-site](https://github.com/fwdslsh/create-unify-site)** — NPM scaffolding tool (`npm create unify-site`)
-- **[unify-starter](https://github.com/fwdslsh/unify-starter)** — Template repository for new Unify sites
-- **[unify-examples](https://github.com/fwdslsh/unify-examples)** — Example sites demonstrating Unify features
-- **[unify-vscode](https://github.com/fwdslsh/unify-vscode)** — VS Code extension for Unify syntax highlighting
 
 ---
 
