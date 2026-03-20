@@ -2,26 +2,6 @@
 
 We build developer experience focused tools for devs who remember when tools where not monoliths. Zero deps, instant setup, no frameworks to wrestle.
 
-## Our Tools
-
-### [inform](https://github.com/fwdslsh/inform) - High-performance web crawler
-
-Convert web pages to clean Markdown with intelligent content extraction. Built for documentation extraction and curation. Think context7 as a CLI tool.
-
-```bash
-# Crawl docs into Markdown
-inform https://docs.example.com --output docs/
-inform --recursive --depth 3 https://api.example.com
-```
-
-**Why we built it**: Web scraping shouldn't require learning a framework. Point, extract, markdown.
-
-### [catalog](https://github.com/fwdslsh/catalog) - Content cataloging for Web 4.0
-
-The next version of the web will be built for AI agents. Give them a content catalog to pick from.
-
-**Why we built it**: The bot traffic to your site is only increasing. might as well let them save some GPU cycles.
-
 ---
 
 ## The Path Forward
@@ -56,8 +36,6 @@ The `/` isn't just our logo - it's a commitment to choosing a simpler path.
 ## Community
 
 - 🌐 **Website**: [fwdslsh.dev](https://fwdslsh.dev)
-- 📚 **Catalog**: [examples](https://github.com/fwdslsh/examples) - Comprehensive guides and tutorials
-- 📦 **Packages**: [npmjs.com/org/fwdslsh](https://npmjs.com/org/fwdslsh)
 - 💬 **Discussions**: Use GitHub Discussions on our tool repositories
 - 🐛 **Issues**: Report bugs and request features in individual repos
 
